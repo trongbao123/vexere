@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- owlCousel -->
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
+
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />  
+</head>
+  <body>
+    <div class="head"></div>
+    <!-- header -->
+    <header class="container-fluid myNavBar">
+        <nav class="navbar navbar-expand-md navbar-light"> 
+            <div class="col-md-8 col-xl-7 col-lg-9 col-sm-6 d-flex">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/icon_vxr_full.svg" alt="">
+                </a>
+                <div class="Categories">
+                    <i class="fa fa-th"></i>
+                    Categories
+                </div>
+                <div class="input-search">
+                    <form action="abc.com">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for anything">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 col-xl-5 col-lg-3 col-sm-4">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item business">
+                            <a class="nav-link" href="#">Thêu xe</a>
+                        </li>
+                        <li class="nav-item teach">
+                            <a class="nav-link" href="#">Quản lý Chuyến đi</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="drop">
+                                    <div class="dropdown">
+                                        <button class="dropdown__btn d-flex">
+                                            <i class="fas fa-user"></i>
+                                        </button>
+                                        <div class="dropdown__list">
+                                            <a href="#" class="dropdown__item"><i class="fas mr-2 fa-user-alt"></i></i>Thông tin tài khoản</a>
+                                            <a href="#" class="dropdown__item"><i class="fas mr-2 fa-bus-alt"></i>Quản lý chuyến đi</a>
+                                            <a href="#" class="dropdown__item"><i class="fas mr-2 fa-charging-station"></i>Quản lý trạm</a>
+                                            <a href="#" class="dropdown__item"><i class="fas mr-2 fa-sign-out-alt"></i>Đăng xuất</a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="nav-item item4 ">
+                            <div class="button d-flex">
+                              <button type="button" class="btn btn--white mr-2" data-toggle="modal" data-target="#exampleModal">
+                                Login
+                              </button>
+                              <button type="button" class="btn btn--red" data-toggle="modal" data-target="#exampleModal1">
+                                Sign Up
+                              </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+       
+
+            
+        </nav>
+    </header>
+  <!-- đăng nhập -->
+  <section class="dangnhap">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content  login">
+          <div class="modal-bodys">
+            <div class="container ">
+              <div class="log__content">
+                <div class="left">
+                  <div class="logo">
+                    <img src="./images/icon_vxr_full.svg" alt="">
+                    <p id="left__title">login social media to get quick access </p>
+                  </div>
+
+                  <div class="log">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-facebook"></i>
+                      Sign in with FaceBook</button>
+                    <button type="button" class="btn btn-info btn-lg btn-block"><i class="fab fa-twitter"></i> Sign
+                      in with twitter</button>
+                    <button type="button" class="btn btn-danger btn-lg btn-block"><i class="fab fa-google"></i> Sign
+                      in with Google</button>
+                  </div>
+                </div>
+
+                <div class="right">
+
+                  <H2>Login to your account</H2>
+                  <p class="right__title">Don't have an account? <a href="">Sign up free</a></p>
+
+                  <form>
+                    <div class="form-group ">
+                      <input type="email" class="form-control top" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Email Adress">
+                    </div>
+                    <div class="form-group ">
+                      <input type="password" class="form-control top" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check content">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember</label>
+
+                      <a class="forgot" href="./dangky.html">Forgot password</a>
+                    </div>
+                    <button class="button3">Log With Email</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- đăng ký -->
+  <section class="dangky">
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content login">
+          <div class="modal-bodys">
+            <div class="container ">
+              <div class="log__content">
+                <div class="left">
+                  <div class="logo">
+                    <img src="./images/icon_vxr_full.svg" alt="">
+                    <h2>Welcome back VEXERE ! </h2>
+                    <p>To keep connected login with your personal info</p>
+                  </div>
+
+                  <div class="log">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fab fa-facebook"></i>
+                      Create in with FaceBook</button>
+                    <button type="button" class="btn btn-info btn-lg btn-block"><i class="fab fa-twitter"></i>
+                      Create
+                      in with twitter</button>
+                    <button type="button" class="btn btn-danger btn-lg btn-block"><i class="fab fa-google"></i>
+                      Create
+                      in with Google</button>
+                  </div>
+                </div>
+
+                <div class="right">
+
+                  <H2>Create account</H2>
+                  <div class="logo__icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google"></i>
+                  </div>
+                  <p class="right__p">Of your email for registration </p>
+
+                  <form>
+                    <div class="name">
+                      <input type="text" class="form-control" placeholder="Name">
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-group gr1">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-map-marker-alt"></i></span>
+                      </div>
+                      <input type="email" class="form-control top" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Email Adress">
+                    </div>
+                    <div class="form-group gr1">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-map-marker-alt"></i></span>
+                      </div>
+                      <input type="password" class="form-control top" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group gr1">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-map-marker-alt"></i></span>
+                      </div>
+                      <input type="number" class="form-control top" id="exampleInputnumber" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group form-check check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">I agree with the content above</label>
+                    </div>
+                    <button class="button3">Create account</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+    <!-- Chi tiết bến xe -->
+
+    <div class="container chiTietBenXe" >
+        <div class="path" >
+            <span>Bến xe</span><i class="fas fa-arrow-right ml-3 mr-3"></i><span>Bễn xe Gia Lâm</span>
+        </div>
+        <div class="benXeContent mb-5" >
+            <div class="row" >
+                <div class="col-4 content-left" >
+                    <div class="d-flex rateStar">
+                        <h2>Bến xe Gia Lâm</h2>
+                        <div  class="ml-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        
+                    </div>
+
+
+                    <table class="rate">
+                        <tr>
+                            <td>
+                                <h3>2.5</h3>
+                                <p>2 đánh giá</p>
+                            </td>
+                            <td>
+                                <h3>3.5</h3>
+                                <p>Dịch vụ</p>
+                            </td>
+                            <td>
+                                <h3>3.5</h3>
+                                <p>An toàn</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="headquarters mt-3" >
+                        <i class="fas mr-2 fa-map-marker-alt"></i><b>Trụ sở :</b> <span> Số 9 Ngô Gia Khảm, Long Biên, Thành phố Hà Nội</span>
+                    </div>
+                    
+                </div>
+                <div class="col-8 content-right" >
+                    <h3>So sánh giá vé lịch trình các hãng xe ở Bến xe Gia Lâm</h3>
+                    
+                  <div class="formsearch">
+                    <table  class="w-100 " >
+                      <tr>
+                        <td><div  class=" input-item" >
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-map-marker-alt"></i></span>
+                            </div>
+                            <input placeholder="Gõ vào nơi đi" class="form-control" type="text" name="city" list="cityname">
+                                <datalist id="cityname">
+                                  <option value="Boston">
+                                  <option value="Cambridge">
+                                </datalist>
+                          </div>
+                        </div></td>
+                        <td><div  class="input-item" >
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-map-marker-alt"></i></span>
+                            </div>
+                            <input placeholder="Gõ vào nơi đến" class="form-control" type="text" name="city" list="cityname">
+                                <datalist id="cityname">
+                                  <option value="Boston">
+                                  <option value="Cambridge">
+                                </datalist>
+                          </div>
+                        </div></td>
+                      </tr>
+                      <tr>
+                        <td><div >
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-alt"></i></span>
+                            </div>
+                            <input class="form-control" type="date" name="city" list="cityname">
+                          </div>
+                        </div></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td><button class="btn btn-search"  ><i class="fas mr-5 fa-bus-alt"></i>TÌM VÉ XE RẺ</button></td>
+                      </tr>
+                    </table>
+                  </div>
+
+
+                  <div class="datVeNhanh" >
+                    <h4>Đặt vé nhanh các tuyến đường từ Bến xe Gia Lâm</h4>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Tuyến đường</th>
+                          <th scope="col">Hãng xe</th>
+                          <th scope="col">Giá vé</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">Bến xe Gia Lâm đi Hải Phòng</td>
+                          <td>Hoàng Ngân</td>
+                          <td>75.000₫</td>
+                          <td><button class="btn  btn-search"  ><i class="fas mr-1 fa-bus-alt"></i>TÌM VÉ XE RẺ</button></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Bến xe Gia Lâm đi Hải Phòng</td>
+                          <td>Hoàng Ngân</td>
+                          <td>75.000₫</td>
+                          <td><button class="btn  btn-search"  ><i class="fas mr-1 fa-bus-alt"></i>TÌM VÉ XE RẺ</button></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Bến xe Gia Lâm đi Hải Phòng</td>
+                          <td>Hoàng Ngân</td>
+                          <td>75.000₫</td>
+                          <td><button class="btn  btn-search"  ><i class="fas mr-1 fa-bus-alt"></i>TÌM VÉ XE RẺ</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                
+
+               
+            </div>
+        </div>
+    </div>
+ 
+    <!-- footer -->
+    <footer>
+      <div class="footer__content">
+        <div class="row row1">
+          <div class="col-3">
+            <ul>
+              <li>
+                <a href="#"><h4>Hãng xe khách</h4></a>
+              </li>
+              <li>  
+                <a href="#"><p>Xe Cô Tô Limousine
+                </p></a>
+              </li>
+              <li>  
+                <a href="#"><p>Xe Daily Limousine</p></a>
+              </li>
+              <li>  
+                <a href="#"><p>Xe Dream Transport</p></a>
+              </li>
+              <li>  
+                <a href="#"><p>Xe G5Car</p></a>
+              </li>
+              <li>  
+                <a href="#"><p>Xe HAV Limousine</p></a>
+              </li>
+              <li>  
+                <a href="#"><p>Xe Hoa Mai</p></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li>
+                <a href="#"><h4>Bến xe khách</h4></a>
+              </li>
+              <li>
+                <a href="#"><p>Bến xe Miền Đông</p></a>
+              </li>
+              <li>  
+                <a href="#"><p>Bến xe Miền Tây</p></a>
+              </li>
+              <li>
+                <a href="#"><p>Bến xe An Sương</p></a>
+              </li>
+              <li>
+                <a href="#"><p>Bến xe Mỹ Đình</p></a>
+              </li>
+              <li>
+                <a href="#"><p>Bến xe Nước Ngầm</p></a>
+              </li>
+              <li>
+                <a href="#"><p>Bến xe Tam Bạc</p></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul>
+              <li>
+                <a href="#"><h4>Hỗ trợ  </h4></a>
+              </li>
+              <li>
+                <a href="#"><p>Hướng dẫn thanh toán</p></a>
+              </li>
+              <li>  
+                <a href="#"><p>Quy chế VeXeRe.com</p></a>
+              </li>
+              <li>
+                <a href="#"><p>Những câu hỏi thường gặp</p></a>
+              </li>
+              <li>
+                <a href="#"><p>Phần mềm hãng xe</p></a>
+              </li>
+              <li>
+                <a href="#"><p>Đặt vé xe khách trực tuyến</p></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 text-right">
+            <div class="dropup">
+              <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fas fa-globe-europe"></i> English
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Deutsch</a>
+                <a class="dropdown-item" href="#">Español</a>
+                <a class="dropdown-item" href="#">Français</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__bottom__content row">
+            <div class="col-md-6 col-ml-12">
+              <img src="./images/icon_vxr_full.svg" alt="">
+              <span>
+                Bản quyền © 2020 thuộc về VeXeRe.Com</span>
+            </div>
+            <div class="col-md-6 col-ml-12 text">
+              <ul>
+                <li>
+                  <a href="#"><p>Terms</p></a>
+                </li>
+                <li>
+                  <a href="#"><p> Policy</p></a>
+                </li>
+                <li>
+                  <a href="#"><p>and</p></a>
+                </li>
+                <li>
+                  <a href="#"><p>Terms</p></a>
+                </li>
+                <li>
+                  <a href="#"><p>Policy</p></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- owlCousel -->
+    <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

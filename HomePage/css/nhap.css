@@ -1,0 +1,27 @@
+.vexe{
+    background-color: antiquewhite;
+    width: 50%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thongtin1{
+    position: relative;
+    top: 312px;
+    width: 50%;
+}
+
+.card1{
+    width: 200%;
+    position: absolute;
+    right: 0px;
+    background-color: antiquewhite;
+    height: 320px;
+    z-index: 5;
+}
+
+.vexe1{
+    position: relative;
+    z-index: 1;
+}

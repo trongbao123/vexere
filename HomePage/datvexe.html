@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt vé xe</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- owlCousel -->
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
+
+    <!-- slick -->
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- animated -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/datvexe.css">
+</head>
+
+<body>
+    <header class="container-fluid myNavBar">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="col-md-8 col-xl-7 col-lg-9 col-sm-6 d-flex">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/icon_vxr_full.svg" alt="">
+                </a>
+                <div class="Categories">
+                    <i class="fa fa-th"></i>
+                    Categories
+                </div>
+                <div class="input-search">
+                    <form action="abc.com">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for anything">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 col-xl-5 col-lg-3 col-sm-4">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item business">
+                            <a class="nav-link" href="#">Thuê xe</a>
+                        </li>
+                        <li class="nav-item teach">
+                            <a class="nav-link" href="#">Quản lý Chuyến đi</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="drop">
+                                <div class="dropdown">
+                                    <button class="dropdown__btn d-flex">
+                                        <i class="fas fa-user"></i>
+                                    </button>
+                                    <div class="dropdown__list">
+                                        <a href="#" class="dropdown__item"><i class="fas mr-2 fa-user-alt"></i></i>Thông
+                                            tin tài khoản</a>
+                                        <a href="#" class="dropdown__item"><i class="fas mr-2 fa-bus-alt"></i>Quản lý
+                                            chuyến đi</a>
+                                        <a href="#" class="dropdown__item"><i
+                                                class="fas mr-2 fa-charging-station"></i>Quản lý trạm</a>
+                                        <a href="#" class="dropdown__item"><i class="fas mr-2 fa-sign-out-alt"></i>Đăng
+                                            xuất</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item item4 ">
+                            <div class="button d-flex">
+                                <button type="button" class="btn btn--white mr-2" data-toggle="modal"
+                                    data-target="#exampleModal">
+                                    Login
+                                </button>
+                                <button type="button" class="btn btn--red" data-toggle="modal"
+                                    data-target="#exampleModal1">
+                                    Sign Up
+                                </button>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="navbar-toggler d-lg-none col-sm-2" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+    <!-- đăng nhập -->
+    <section class="dangnhap">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content  login">
+                    <div class="modal-bodys">
+                        <div class="container ">
+                            <div class="log__content">
+                                <div class="left">
+                                    <div class="logo">
+                                        <img src="./images/icon_vxr_full.svg" alt="">
+                                        <p id="left__title">login social media to get quick access </p>
+                                    </div>
+
+                                    <div class="log">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block"><i
+                                                class="fab fa-facebook"></i>
+                                            Sign in with FaceBook</button>
+                                        <button type="button" class="btn btn-info btn-lg btn-block"><i
+                                                class="fab fa-twitter"></i> Sign
+                                            in with twitter</button>
+                                        <button type="button" class="btn btn-danger btn-lg btn-block"><i
+                                                class="fab fa-google"></i> Sign
+                                            in with Google</button>
+                                    </div>
+                                </div>
+
+                                <div class="right">
+
+                                    <H2>Login to your account</H2>
+                                    <p class="right__title">Don't have an account? <a href="">Sign up free</a></p>
+
+                                    <form>
+                                        <div class="form-group ">
+                                            <input type="email" class="form-control top" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email Adress">
+                                        </div>
+                                        <div class="form-group ">
+                                            <input type="password" class="form-control top" id="exampleInputPassword1"
+                                                placeholder="Password">
+                                        </div>
+                                        <div class="form-group form-check content">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Remember</label>
+
+                                            <a class="forgot" href="./dangky.html">Forgot password</a>
+                                        </div>
+                                        <button class="button3">Log With Email</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- đăng ký -->
+    <section class="dangky">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content login">
+                    <div class="modal-bodys">
+                        <div class="container ">
+                            <div class="log__content">
+                                <div class="left">
+                                    <div class="logo">
+                                        <img src="./images/icon_vxr_full.svg" alt="">
+                                        <h2>Welcome back VEXERE ! </h2>
+                                        <p>To keep connected login with your personal info</p>
+                                    </div>
+
+                                    <div class="log">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block"><i
+                                                class="fab fa-facebook"></i>
+                                            Create in with FaceBook</button>
+                                        <button type="button" class="btn btn-info btn-lg btn-block"><i
+                                                class="fab fa-twitter"></i>
+                                            Create
+                                            in with twitter</button>
+                                        <button type="button" class="btn btn-danger btn-lg btn-block"><i
+                                                class="fab fa-google"></i>
+                                            Create
+                                            in with Google</button>
+                                    </div>
+                                </div>
+
+                                <div class="right">
+
+                                    <H2>Create account</H2>
+                                    <div class="logo__icon">
+                                        <i class="fab fa-facebook"></i>
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-google"></i>
+                                    </div>
+                                    <p class="right__p">Of your email for registration </p>
+
+                                    <form>
+                                        <div class="name">
+                                            <input type="text" class="form-control" placeholder="Name">
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group gr1">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1"><i
+                                                        class="fa fa-map-marker-alt"></i></span>
+                                            </div>
+                                            <input type="email" class="form-control top" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Email Adress">
+                                        </div>
+                                        <div class="form-group gr1">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1"><i
+                                                        class="fa fa-map-marker-alt"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control top" id="exampleInputPassword1"
+                                                placeholder="Password">
+                                        </div>
+                                        <div class="form-group gr1">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1"><i
+                                                        class="fa fa-map-marker-alt"></i></span>
+                                            </div>
+                                            <input type="number" class="form-control top" id="exampleInputnumber"
+                                                placeholder="Phone Number">
+                                        </div>
+                                        <div class="form-group form-check check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">I agree with the content
+                                                above</label>
+                                        </div>
+                                        <button class="button3">Create account</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- body -->
+    <section class="mid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="boloc animate__animated animate__fadeInLeft animate__delay-1s">
+                        <p>Bộ lọc tìm kím</p>
+                        <p class="clear">Xóa lọc</p>
+
+                    </div>
+
+                    <div class="mid__left animate__animated animate__fadeInLeft animate__delay-1s">
+
+                        <div class="giodi">
+                            <div class="giodi_test">
+                                <p>Sáng sớm</p>
+                                <p>00:00-06:00</p>
+                            </div>
+                            <div class="giodi_test">
+                                <p>Sáng sớm</p>
+                                <p>00:00-06:00</p>
+                            </div>
+                            <div class="giodi_test">
+                                <p>Sáng sớm</p>
+                                <p>00:00-06:00</p>
+                            </div>
+                            <div class="giodi_test">
+                                <p>Sáng sớm</p>
+                                <p>00:00-06:00</p>
+                            </div>
+                        </div>
+
+                        <div class="tieuchi">
+                            <p>Tiêu chí phổ biến</p>
+
+                            <div class="box1">
+                                <input type="checkbox" name="check" id="check">
+                                <label class="box__2"> Xác nhận tức thì (19)Nhà xe sẽ nhận được thông tin ngay khi bạn
+                                    hoàn
+                                    tất
+                                    các bước đặt
+                                    vé</label>
+                            </div>
+                            <div class="box1">
+                                <input type="checkbox" name="check" id="check">
+                                <label class="box__2">Không cần thanh toán trước (7)Chuyến có thể thanh toán tại văn
+                                    phòng
+                                    nhà
+                                    xe hoặc khi lên
+                                    xe</label>
+                            </div>
+                            <div class="box1">
+                                <input type="checkbox" name="check" id="check">
+                                <label class="box__2">Chuyến có trung chuyển đón/trả (28)Chuyến có đón/trả tận nơi tại
+                                    một
+                                    số
+                                    khu vực nhất
+                                    định</label>
+                            </div>
+                            <div class="box1">
+                                <input type="checkbox" name="check" id="check">
+                                <label class="box__2">Chuyến có giảm giá & khuyến mãi (12)Chuyến có giảm giá trực tiếp
+                                    từ
+                                    nhà xe
+                                    hoặc có mã
+                                    giảm giá của VeXeRe</label>
+                            </div>
+                            <div class="box1">
+                                <input type="checkbox" name="check" id="check">
+                                <label class="box__2">Xe an toàn mùa Covid-19 (12)Nhà xe đảm bảo thực hiện các biện pháp
+                                    phòng
+                                    dịch (Phun khử
+                                    trùng xe, nước rửa tay,...)</label>
+                            </div>
+                            <div class="box1">
+                                <input type="checkbox" name="check" id="check">
+                                <label class="box__2">Xe VIP Limousine (20)</label>
+                            </div>
+                            <div class="box1">
+                                <input type="checkbox" name="check" id="check">
+                                <label class="box__2">Chuyến được chọn trước chỗ ngồi (19)</label>
+                            </div>
+                            <div class="box1">
+                                <input type="checkbox" name="check" id="check">
+                                <label class="box__2">Cho phép xem vị trí xe (5)Chuyến có cung cấp tín hiệu định vị cho
+                                    phép
+                                    bạn
+                                    theo dõi vị
+                                    trí xe khi di chuyển</label>
+                            </div>
+                        </div>
+
+                        <div class="giave">
+                            <form>
+                                <div class="form-group">
+                                    <label for="formControlRange">Giá vé</label>
+                                    <input type="range" class="form-control-range" id="formControlRange">
+                                    <div class="info">
+                                        <p>0</p>
+                                        <p>20000</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="vitrighe">
+                            <p>Chọn Vị Trí Ghế</p>
+                            <div class="hangghe">
+                                <span class="chair">Hàng ghế Trống</span>
+                                <div class="add">
+                                    <button class="add__ve" id="button1"><i class="fa fa-plus"></i></button>
+                                    <p>1</p>
+                                    <button class="add__ve" id="button2"><i class="fa fa-minus"></i></button>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="hangghe">
+                                <span class="chair">Hàng ghế Đầu</span>
+                                <input type="checkbox" name="check" id="hangghe">
+                            </div>
+                            <div class="border"></div>
+                            <div class="hangghe">
+                                <span class="chair">Hàng ghế Giữa</span>
+                                <input type="checkbox" name="check" id="hangghe">
+                            </div>
+                            <div class="border"></div>
+                            <div class="hangghe">
+                                <span class="chair">Hàng ghế Cuối</span>
+                                <input type="checkbox" name="check" id="hangghe">
+                            </div>
+                            <div class="border"></div>
+                        </div>
+
+                        <div class="nhaxe">
+                            <p>Nhà xe</p>
+                            <input type="text" class="nhaxe__nav" placeholder="Tìm Nhà Xe">
+                            <div class="scroll">
+                                <div class="nhaxe_scroll" id="list1" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Anh thư</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list2" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Anh Đạt</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list3" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Tân Phát</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list4" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Anh ba</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list5" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Chú Tư</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list6" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Anh long</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list7" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Anh bảnh</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Chú Dần</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="nhaxe">
+                            <p>Điểm Đón</p>
+                            <input type="text" class="nhaxe__nav" placeholder="Tìm Nhà Xe">
+                            <div class="scroll">
+                                <div class="nhaxe_scroll" id="list1" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Thủ Đức</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list2" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Quận 12</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list3" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Bình Thạnh</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list4" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Gò Vấp</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list5" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Tân Bình</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list6" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Thuận An</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list7" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Tân Phú</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>An Phú</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Phú Nhuận</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Quận 9</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Quận 10</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Quận 3</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>QUận 1</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Thủ Dầu 1</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Quận 2 </span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Quận 4</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Quận 6</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Hóc Môn</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Quận 7</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Quận 8</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nhaxe">
+                            <p>Điểm Trả</p>
+                            <input type="text" class="nhaxe__nav" placeholder="Tìm Nhà Xe">
+                            <div class="scroll">
+                                <div class="nhaxe_scroll" id="list1" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Buôn Mê Thuật</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list2" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>krong Pak</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list3" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Buôn Hồ</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list4" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Gia Nghĩa</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list5" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Dak milk</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list6" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Buôn Đôn</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list7" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>krong Ana</span>
+                                </div>
+                                <div class="nhaxe_scroll" id="list8" type="checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span>Cư M'gar</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="giuong">
+                            <p>Loại ghế / giường</p>
+                            <div class="bed__chair">
+                                <div class="bed">
+                                    <input type="checkbox" name="check" id="hangghe">
+                                    <span class="bed__">Ghế Ngồi</span>
+
+                                </div>
+
+                                <div class="bed">
+                                    <input type="checkbox" name="check" id="hangghe">
+                                    <span class="chair">Giường Nằm Đôi</span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cmt">
+                            <p>Đánh Giá</p>
+                            <div class="top">
+                                <div class="start">
+                                    <i class="fa fa-star sta"></i>
+                                    <i class="fa fa-star sta"></i>
+                                    <i class="fa fa-star sta"></i>
+                                    <i class="fa fa-star sta"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>trở lên</p>
+                            </div>
+                            <div class="top">
+                                <div class="start">
+                                    <i class="fa fa-star sta"></i>
+                                    <i class="fa fa-star sta"></i>
+                                    <i class="fa fa-star sta"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>trở lên</p>
+                            </div>
+                            <div class="top">
+                                <div class="start">
+                                    <i class="fa fa-star sta"></i>
+                                    <i class="fa fa-star sta"></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>trở lên</p>
+                            </div>
+                            <div class="top">
+                                <div class="start">
+                                    <i class="fa fa-star sta"></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star "></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p>trở lên</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="mid__right animate__animated animate__fadeInRight animate__delay-1s">
+                        <h2>Đặt mua vé xe đi Đắk Lắk từ Sài Gòn chất lượng cao và giá vé ưu đãi nhất: 296 chuyến</h2>
+                        <div class="flash__sale">
+                            <img class="animate__animated animate__fadeInRight animate__delay-1s"
+                                src="./images/img2.jpg" alt="">
+                            <img class="img1 animate__animated animate__fadeInRight animate__delay-2s"
+                                src="./images/img5.jpg" alt="">
+                            <img class="img1 animate__animated animate__fadeInRight animate__delay-3s"
+                                src="./images/img1.jpg" alt="">
+                            <img class="img1 animate__animated animate__fadeInRight animate__delay-3.5s"
+                                src="./images/img4.jpg" alt="">
+                        </div>
+
+                        <div class="project__content">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <span>Sắp xếp theo:</span>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#all"
+                                        role="tab" aria-controls="pills-home" aria-selected="true">Giờ sớm nhất</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                        role="tab" aria-controls="pills-profile" aria-selected="false">Giờ muộn nhất</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                        role="tab" aria-controls="pills-contact" aria-selected="false">Giá thấp nhất</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="pills-website-tab" data-toggle="pill" href="#pills-website"
+                                        role="tab" aria-controls="pills-website" aria-selected="false">Giá cao nhất</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="all" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe1.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+
+                                                    <div class="thongtin">
+                                                        <a id="menu_open" class="show" href="#menu_open"> thông tin chi
+                                                            tiết<i class="fa fa-angle-down"></i></a>
+                                                            <button class="chonchuyen">chọn chuyến</button>
+                                                    </div>
+
+
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <section class="services">
+                                            <div class="container">
+                                                <div class="services__carousel">
+                                                    <div class="multiple-items">
+                                                        <div class="services__item">
+                                                            <img class="item__img" src="./images/sale1.jpg" alt="">
+                                                        </div>
+                                                        <div class="services__item">
+                                                            <img class="item__img" src="./images/sale2.jpg" alt="">
+                                                        </div>
+                                                        <div class="services__item">
+                                                            <img class="item__img" src="./images/sale3.jpg" alt="">
+                                                        </div>
+                                                        <div class="services__item">
+                                                            <img class="item__img" src="./images/sale4.jpg" alt="">
+                                                        </div>
+                                                        <div class="services__item">
+                                                            <img class="item__img" src="./images/sale1.jpg" alt="">
+                                                        </div>
+                                                        <div class="services__item">
+                                                            <img class="item__img" src="./images/sale3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </section>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/vexe1.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Thư
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 30 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP Đà
+                                                        Lạt
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 5 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe5.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- hàng 2 -->
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn container">
+                                                <img src="./images/xe3.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <p class="thongtin">
+                                                        <a data-toggle="collapse" href="#collapseExample" role="button"
+                                                            aria-expanded="false" aria-controls="collapseExample">thông
+                                                            tin
+                                                            chi
+                                                            tiết<i class="fa fa-angle-down"></i>
+                                                        </a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </p>
+
+                                                    <div class="collapse" id="collapseExample">
+                                                        <div class="collaspe__body">
+                                                            Some placeholder content for the collapse component. This
+                                                            panel
+                                                            is
+                                                            hidden by default but revealed when the user activates the
+                                                            relevant
+                                                            trigger.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe2.jpg" class="card-img-top" alt="...">
+                                            
+                                                <div class="vexe">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                       <p class="tien">280.000đ</p>
+                                                   </h5>
+                                                   <p class="card-text">giường nằm 41 chỗ</p>
+                                                   <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                       SAI
+                                                       GON
+                                                   </p>
+                                                   <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                       HỒ
+                                                   </p>
+                                                   <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin1">
+                                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                            Link with href
+                                                            
+                                                          </a>
+                                                          <div class="collapse" id="collapseExample">
+                                                            <div class="card1 card-body">
+                                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                                            </div>
+                                                          </div>
+                                            
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe3.jpg" class="card-img-top" alt="...">
+                                               <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                         <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe8.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe6.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe7.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe8.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe6.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe7.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-website" role="tabpanel"
+                                    aria-labelledby="pills-website-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe1.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe2.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe3.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe4.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe5.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe6.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                            Link with href
+                                                            
+                                                          </a>
+                                                          <div class="collapse" id="collapseExample">
+                                                            <div class="card1 card-body">
+                                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                                            </div>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe7.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-12 mt-4">
+                                            <div class="card animate__animated animate__zoomIn">
+                                                <img src="./images/xe8.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Anh Đạt
+                                                        <p class="chile"><i class="fa fa-star"></i> 4.9</p>
+                                                        <p class="tien">280.000đ</p>
+                                                    </h5>
+                                                    <p class="card-text">giường nằm 41 chỗ</p>
+                                                    <p class="card-text2"><i class="fa fa-map-marker-alt"></i> 18:00 VP
+                                                        SAI
+                                                        GON
+                                                    </p>
+                                                    <p class="card-text2"><i class="fa fa-street-view"></i> 5:30 VP BUÔN
+                                                        HỒ
+                                                    </p>
+                                                    <p class="bot">6 người đặt trong 6 tiếng gần đây</p>
+                                                    <div class="thongtin">
+                                                        <a href="">thông tin chi tiết<i
+                                                                class="fa fa-angle-down"></i></a>
+                                                        <button class="chonchuyen">chọn chuyến </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer__content">
+            <div class="row row1">
+                <div class="col-3">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <h4>Hãng xe khách</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Xe Cô Tô Limousine
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Xe Daily Limousine</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Xe Dream Transport</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Xe G5Car</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Xe HAV Limousine</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Xe Hoa Mai</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <h4>Bến xe khách</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Bến xe Miền Đông</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Bến xe Miền Tây</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Bến xe An Sương</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Bến xe Mỹ Đình</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Bến xe Nước Ngầm</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Bến xe Tam Bạc</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <h4>Hỗ trợ </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Hướng dẫn thanh toán</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Quy chế VeXeRe.com</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Những câu hỏi thường gặp</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Phần mềm hãng xe</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Đặt vé xe khách trực tuyến</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 text-right">
+                    <div class="dropup">
+                        <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-globe-europe"></i> English
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Deutsch</a>
+                            <a class="dropdown-item" href="#">Español</a>
+                            <a class="dropdown-item" href="#">Français</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__bottom__content row">
+                    <div class="col-md-6 col-ml-12">
+                        <img src="./images/icon_vxr_full.svg" alt="">
+                        <span>
+                            Bản quyền © 2020 thuộc về VeXeRe.Com</span>
+                    </div>
+                    <div class="col-md-6 col-ml-12 text">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>Terms</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p> Policy</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>and</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Terms</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Policy</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <!-- owlCousel -->
+    <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
+
+
+
+    <!-- SLICK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.multiple-items').slick({
+            infinite: true,
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    </script>
+
+    <script>
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+        });
+    </script>
+
+  
+</body>
+
+</html>
