@@ -236,35 +236,93 @@ p {
     line-height: 42px;
 }
 
-.project__content .card {
-    border-radius: 4px;
-    text-align: center;
-    height: 300px;
+
+.card__top{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+    height: 190px;
+    border-radius: 10px;
 }
 
- .card:hover {
-    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.13);
-} 
+.card__link{
+    position: relative;
+    top: 135px;
+    right: 191px;
+}
 
-.project__content img {
+.card__right{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 60%;
+}
+
+.card__right>img{
+    border-radius: 8px;
+    height: 134px;
+    position: relative;
+    top: 25px;
+    left: 0px;
+    width: 38%;
+}
+
+.button{
+    position: relative;
+    top: 105px;
+    right: 21px;
+}
+.button>button{
+    background-color: #ffc107;
+    border: none;
+    height: 35px;
+    width: 87%;
+    font-weight: 600;
+}
+
+.div{
+    position: relative;
+    top: 20px;
+    right: 0px;
+}
+.div>i{
+    font-size: 21px;
+    color: gray;
+    padding: 4px;
+}
+
+.div__content{
+    display: flex;
+}
+
+.div__content>i{
+    position: relative;
+    left: 37px;
+    top: 7px;
+    font-size: 20px;
+    color: #d39e00;
+}
+
+.content__1{
+    position: relative;
+    left: 260px;
+    top: 0px;
+    font-size: 20px;
+    color: blue;
+    font-weight: 700;
+}
+
+img.item__img{
     width: 100%;
     border-radius: 8px;
-    width: 25%;
-    height: 170px;
+    height: 180px;
     position: relative;
     top: 45px;
     left: 18px;
+    object-fit: cover;
 
 }
 
-.card-body {
-    position: relative;
-    width: 50%;
-    bottom: 146px;
-    left: 215px;
-    line-height: 23px;
-    text-align: left;
-}
 
 .card-body>h5 {
     display: flex;
@@ -326,10 +384,6 @@ p {
 
 
 .multiple-items .services__item {
-    /* width: 214px;
-    height: 230px;
-    background-color: white;
-    color: black; */
     text-align: center;
     margin: 0 5px;
 
@@ -354,136 +408,35 @@ p {
 .services__carousel .slick-dots li.slick-active button:before{
     color: white;
 }
-.card:hover {
+
+/* thông tin chi tiết */
+.project .nav{
+        justify-content: center;
+}
+
+.cmt1{
+    background-color: #e2e2e2;
+    line-height: 56px;
+    color: #d39e00;
+}
+
+.card__2{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card__right1{
+    width: 50%;
+    height: 319px;
+    overflow-y: scroll;
+}
+
+
+
+.vexe:hover{
+    box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
     transform: translateY(-0.25rem);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-    box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
-}
-
-.card{
-    position: relative;
-    border-radius: 4px;
-    border: 1px solid rgb(192, 192, 192);
-    margin-bottom: 16px;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-}
-.collaspe__body{
-    position: absolute;
-    width: 208%;
-    margin-bottom: 15px;
-    top: -26px;
-   
-    left: -230px;
-    height: 300px;
-    z-index: 5;
-    box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
-}
-
-.thongtinchitiet>ul{
-    justify-content: space-between;
-}
-
-#menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.683);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    opacity: 0;
-    transform: scale(0.6);
-    visibility: hidden;
-    line-height: 50px;
-}
-
-#menu>ul li{
-    display: inline;
-    position: relative;
-    bottom: 90px;
-    padding: 50px;
-}
-.menu__header {
-    display: flex;
-}
-
-#menu.show {
-    opacity: 1;
-    transform: scale(1);
-    visibility: visible;
-    position: fixed;
-
-}
-
-#menu.show a:hover {
-    color: #ff6600;
-}
-
-
-#menu_open {
-    background-color: unset;
-    border: solid 0px;
-    position: relative;
-    bottom: 1px;
-    left: 1px;
-}
-
-#menu_open i {
-    color: #007bff;
-    padding-top: 6px;
-}
-
-#menu_close {
-    background-color: #ff6600;
-    width: 7%;
-    height: 45px;
-    border: 1px solid #ff6600;
-    border-radius: 13px;
-    color: white;
-    font-size: 22px;
-    line-height: 15px;
-    position: absolute;
-    right: 40px;
-    top: 40px;
-    overflow: hidden;
-}
-
-.services1{
-    width: 102%;
-    height: 0px;
-    position: absolute;
-    top: 424px;
-    left: -6px;
-
-}
-
-.vexe{
-
-    width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content: space-between;
-    position: unset;
-    z-index: 5;
-}
-
-.thongtin1{
-    position: absolute;
-   
-    width: 100%;
-}
-
-.card1{
-    width: 100%;
-    position: absolute;
-    /* right: 0px; */
-    background-color: antiquewhite;
-    height: 320px;
-    z-index: 5;
-    left: 0px;
-    top: 128px;
+    transition: .3s ease;
+    
 }
